@@ -87,7 +87,7 @@ async def get_shipping_rate_estimate(
     to_country, to_postal = resolve_location(destination_city)
 
     payload: Dict[str, Any] = {
-        "carrier_ids": ["se-1646315","se-1646316","se-1646317","se-1646383","se-3004923"],  # Omit unless you have real carrier IDs connected
+        #"carrier_ids": ["se-1646315","se-1646316","se-1646317","se-1646383","se-3004923"],  # Omit unless you have real carrier IDs connected
         "from_country_code": from_country,
         "from_postal_code": from_postal,
         "to_country_code": to_country,

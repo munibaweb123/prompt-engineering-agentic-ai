@@ -1,9 +1,8 @@
 import asyncio
 import os
-from typing import Any, Dict
 from dotenv import find_dotenv, load_dotenv
 from openai import AsyncOpenAI
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from agents import Agent, OpenAIChatCompletionsModel, Runner, function_tool, set_tracing_disabled
 
 # Disable tracing (optional)
