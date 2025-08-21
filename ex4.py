@@ -18,7 +18,7 @@ external_client: AsyncOpenAI = AsyncOpenAI(
 
 # 2. Which LLM Model?
 llm_model: OpenAIChatCompletionsModel = OpenAIChatCompletionsModel(
-    model="gemini-2.5-flash",
+    model="gemini-2.0-flash",
     openai_client=external_client
 )
 agent = Agent(

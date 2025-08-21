@@ -19,7 +19,7 @@ external_client: AsyncOpenAI = AsyncOpenAI(
 
 # 2. Which LLM Model?
 llm_model: OpenAIChatCompletionsModel = OpenAIChatCompletionsModel(
-    model="gemini-2.5-flash",
+    model="gemini-2.0-flash",
     openai_client=external_client
 )
 
@@ -68,6 +68,7 @@ agent=Agent(
     name="Data Agent",
     instructions="You are a data analyst. Use the database query tool to analyze sales data "
         "and summarize findings in clear bullet points.",
+    tools=[query_sales],
     model=llm_model
 )
 # -------------------------
